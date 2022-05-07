@@ -1,6 +1,7 @@
 ---
-title: "About"
+title: "About Us"
 date: 2022-05-07T10:43:29+02:00
+description: World's leading manufacturer of digital shapes. We shape the world. You live in it.
 draft: false
 ---
 
