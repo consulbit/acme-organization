@@ -2,6 +2,10 @@
 title: "Terms"
 date: 2022-05-07T10:48:07+02:00
 draft: false
+menu:
+  footer:
+    name: Terms of Use
+    weight: 200
 ---
 
 Terms
