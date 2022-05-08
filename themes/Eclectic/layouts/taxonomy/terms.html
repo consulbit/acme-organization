@@ -9,7 +9,7 @@
     {{ range $key, $value := .Data.Terms.Alphabetical }}
     {{ $name := .Name }}
     {{ $count := .Count }}
-    {{ $pages := .Pages }}
+    {{ $pages := .Pages}}
     {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
 <li>
 <input type="radio" name="categories" id="{{$name}}">
@@ -18,7 +18,7 @@
     <small> ({{ $count }} post{{if gt $count 1}}s{{end}})</small>
 </label>
 <ul>
-    {{ range $pages }}
+    {{ range $pages.ByDate }}
     <li hugo-nav="{{ .RelPermalink}}"><a
             href="{{ .RelPermalink}}">{{ default (.File.ContentBaseName | humanize) .LinkTitle }}</a></li>
     {{ end }}
